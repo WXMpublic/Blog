@@ -1,0 +1,25 @@
+# Site settings
+name: Q-Canon
+subtitile: Notes on Quantum Information Science
+author: WXM
+url: "https://WXMpublic.github.io/" # the base hostname & protocol for your site
+resume_site: "https://WXMpublic.github.io/New-Page/about/"
+github: https://github.com/WXMpublic/
+baseurl: "/Blog/" # the subpath of your site, e.g. /blog/
+description: >
+  A fresh start up of Git Pages
+banner: Information is physical
+cover: "/assets/header/header_image.jpg"
+logo: "styles/images/favicon.ico"
+
+permalink: /:categories/:title/
+# permalink: /:year/:month/:day/:title/
+paginate: 10
+
+exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
+
+github_username: WXMpublic
+QiNiu_url: http://ppbrwbt0i.bkt.clouddn.com/
+
+# Build settings
+markdown: kramdown
