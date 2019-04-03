@@ -252,7 +252,7 @@ $$ \abs{\tilde S} \leq \norm{\ket{\beta v} + \ket{\beta^\prime v}}
 
 $$\abs{S} \leq 2\sqrt{2}$$
 
-# 对无信号模型
+## 对无信号模型
 
 Popescu-Rohrlich box 可以达到 $4$
 

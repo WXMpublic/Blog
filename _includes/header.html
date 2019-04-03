@@ -1,20 +1,20 @@
 <header class="navbar navbar-inverse navbar-fixed-top docs-nav" role="banner">
   <div class="container">
     <div class="navbar-header">
-      <a href="/New-Page" class="navbar-brand">
+      <a href="{{ site.baseurl }}" class="navbar-brand">
         <img src="{{ '/styles/images/logo.png' | prepend: site.baseurl }}">
       </a>
     </div>
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
       <ul class="nav navbar-nav">    
         <li>
-          <a href="{{ '/' | prepend: site.baseurl }}">Home</a>
+          <a href="{{ '' | prepend: site.baseurl }}">Home</a>
         </li>
         <li>
-          <a href="{{ '/categories/' | prepend: site.baseurl }}">Categories</a>
+          <a href="{{ 'categories/' | prepend: site.baseurl }}">Categories</a>
         </li>
         <li>
-          <a href="{{ '/tag' | prepend: site.baseurl }}">Tags</a>
+          <a href="{{ 'tag' | prepend: site.baseurl }}">Tags</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -22,10 +22,10 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links<b class="caret"></b></a>
           <ul class="dropdown-menu">
             <li><a rel="nofollow" target="_blank" href="{{site.github}}">Github</a></li>
-            <!-- <li><a rel="nofollow" target="_blank" href="{{site.resume_site}}">关于作者</a></li> -->
+            <li><a rel="nofollow" target="_blank" href="{{site.resume_site}}">About</a></li>
             <li><a href="{{ '/feed.xml' | prepend: site.baseurl }}">RSS Subscription</a></li>
             <li class="divider"></li>
-            <!-- <li><a rel="nofollow" target="_blank" href="https://github.com/canoming/New-Page.git">Source Code</a></li> -->
+            <li><a rel="nofollow" target="_blank" href="https://github.com/WXMpublic/blog.git">Source Code</a></li>
           </ul>
         </li>
       </ul>
