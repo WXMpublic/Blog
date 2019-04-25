@@ -541,7 +541,7 @@ samp {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 code {
-  padding: 2em 0;
+  padding: .2em 0;
   font-size: 0.85em !important;
   color: #000;
   background-color: #f9f2f4;
