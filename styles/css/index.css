@@ -316,7 +316,7 @@ h6,
 .h5,
 .h6 {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, 'Microsoft YaHei', sans-serif, "Open Sans", "Helvetica Neue", Helvetica, Arial, 'Microsoft YaHei', sans-serif;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 1.1;
   color: inherit;
 }
@@ -378,7 +378,7 @@ h6 .small {
 }
 h1,
 .h1 {
-  font-size: 38px;
+  font-size: 2.25em;
 }
 h2,
 .h2 {
@@ -541,9 +541,9 @@ samp {
   font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
 }
 code {
-  padding: 2px 4px;
-  font-size: 90%;
-  color: #c7254e;
+  padding: 2em 0;
+  font-size: 0.85em !important;
+  color: #000;
   background-color: #f9f2f4;
   white-space: nowrap;
   border-radius: 4px;
@@ -6101,7 +6101,7 @@ html {
 }
 body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, 'Microsoft YaHei', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333333;
   background-color: #f7f7f7;
