@@ -20,13 +20,17 @@
     	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   	<![endif]-->
   	<script>
-		var _hmt = _hmt || [];
-		(function() {
-		  var hm = document.createElement("script");
-		  hm.src = "//hm.baidu.com/hm.js?{{ site.baidu_analysis }}";
-		  var s = document.getElementsByTagName("script")[0]; 
-		  s.parentNode.insertBefore(hm, s);
-		})();
+		$(function(){
+  			if(location.hash){
+    			var target = $(location.hash);
+    			if(target.length==1){
+    				var top = target.offset().top-44;
+    				if(top > 0){
+    					$('html,body').animate({scrollTop:top}, 1000);
+    				}
+    			}
+ 			}
+		});
 	</script>
   	<style type="text/css">
 	  	.docs-content{

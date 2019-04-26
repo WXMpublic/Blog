@@ -548,6 +548,11 @@ code {
   white-space: nowrap;
   border-radius: 4px;
 }
+code::before,
+code::after {
+  content: "\00a0";
+  letter-spacing: -0.2em;
+}
 pre {
   display: block;
   padding: 9.5px;
@@ -568,6 +573,10 @@ pre code {
   white-space: pre-wrap;
   background-color: transparent;
   border-radius: 0;
+}
+pre code::before,
+pre code::after {
+  content: normal;
 }
 .pre-scrollable {
   max-height: 340px;
