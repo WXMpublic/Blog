@@ -27,7 +27,7 @@ flag 表示输出, 但是似乎这不符合中国人的直觉). 当我们按下�
 每一个结果分配一个字符 $a\in X$. 条件概率 $P(a\vert A)$ 唯一地定义了一个设备无关测量.
 前段时间火热的量子密钥分发协议就是基于设备无关测量的, 它的安全性与具体的通信系统无关.
 
-![Measurement Device]({{ 'Q_Device.png-Demo' | prepend: site.QiNiu_url}} "Measurement Device")
+![Measurement Device]({{ 'Q_Device.png' | prepend: site.QiNiu_url}} "Measurement Device")
 
 当我们讨论局域性时, 我们需要的是两个类空测量事件, 也即是两个独立的测量事件, 分别用字母表
 $\Gamma_A$ 与 $\Gamma_B$ 表示, 而它们的结果分别用字母表 $X$ 与 $Y$ 表示.
@@ -266,7 +266,7 @@ $$\abs{S} \leq 4$$
 
 我们可以画出相关几何
 
-![CHSH Geometry]({{ 'Geo_of_CHSH.png-Demo' | prepend: site.QiNiu_url}} "CHSH Geometry")
+![CHSH Geometry]({{ 'Geo_of_CHSH.png' | prepend: site.figure_url}} "CHSH Geometry")
 
 关于这个图, 有几点要注意
 

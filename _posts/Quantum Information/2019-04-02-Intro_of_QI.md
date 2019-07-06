@@ -39,7 +39,7 @@ Qiniu: true
 量子世界的诡异性质逼迫我们对"实验"的细节进行更深入的思考, 因而催生出了广义概率论
 (GPT, general probability theory):
 
-![GTP]({{ 'GPT.png-Demo' | prepend: site.QiNiu_url}})
+![GTP]({{ 'GPT.png' | prepend: site.figure.url}})
 
 广义概率论是关于描述一切实验的理论. 在广义概率论中, 一切实验都被分为了三部分:
 
@@ -84,7 +84,7 @@ Qiniu: true
 所有人在初学物理时接触到最简单的叠加原理便是作用在质点上的力可以拆解成空间中不同方向的力的叠加.
 这在国内通常是高中物理的第一课.
 
-![Decomposition]({{ 'Decomposition.png-Demo' | prepend: site.QiNiu_url}})
+![Decomposition]({{ 'Decomposition.png' | prepend: site.figure_url}})
 
 在物理中我们将这些最基本的自由度组合起来, 作为基底. 在数学上它们就构成了一个线性空间.
 线性空间最漂亮的一点便是, 一旦我们确定了一组完备基底 $(e_1,e_2,\cdots,e_n)$,

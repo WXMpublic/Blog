@@ -9,8 +9,8 @@ baseurl: "/Blog/" # the subpath of your site, e.g. /blog/
 description: >
   A fresh start up of Git Pages
 banner: Information is physical
-cover: "/assets/header/header_image.jpg"
-logo: "styles/images/favicon.ico"
+cover: "/_assets/header/header_image.jpg"
+logo: {{ 'styles/images/favicon.ico' | prepend: site.baseurl}}
 
 permalink: /:categories/:title/
 # permalink: /:year/:month/:day/:title/
@@ -19,7 +19,8 @@ paginate: 10
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
 github_username: WXMpublic
-QiNiu_url: http://ppbrwbt0i.bkt.clouddn.com/
+figure_url: {{ '_asserts/figures/' | prepend: site.baseurl}}
+# QiNiu_url: http://ppbrwbt0i.bkt.clouddn.com/
 
 # Build settings
 markdown: kramdown
