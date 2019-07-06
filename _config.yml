@@ -19,7 +19,7 @@ paginate: 10
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
 github_username: WXMpublic
-figure_url: "/_asserts/figures/"
+figure_url: "/Blog/_asserts/figures/"
 # QiNiu_url: http://ppbrwbt0i.bkt.clouddn.com/
 
 # Build settings
