@@ -266,7 +266,7 @@ $$\abs{S} \leq 4$$
 
 我们可以画出相关几何
 
-![CHSH Geometry]({{ 'Geo_of_CHSH.png' | prepend: site.figure_url}} "CHSH Geometry")
+![CHSH Geometry]({{site.figure_url}}"Geo_of_CHSH.png")
 
 关于这个图, 有几点要注意
 
