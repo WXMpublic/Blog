@@ -148,4 +148,6 @@ $$
 下一篇我准备展示一下 $\text{local}\subsetneq\text{quantum}\subsetneq\text{no-signaling}$,
 以及 CHSH 不等式, 或者说 Bell 不等式. 
 
-![MDI Venn Graph]({{ 'Device_Indi_Geo.png' | prepend: site.figure_url}})
+<!-- ![MDI Venn Graph]({{ 'Device_Indi_Geo.png' | prepend: site.figure_url}}) -->
+
+![MDI Graph](../../_asserts/figures/Device_Indi_Geo.png)
