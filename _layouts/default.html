@@ -6,10 +6,12 @@
   <body class="index">
 
     {% include header.html %}
-    {% include docs_header.html %}
-    {% if page.title %}
-      {% include banner.html %}
-    {% endif %}
+    {% include top_padding.html %}
+    {% unless page.title %}
+      {% include docs_header.html %}
+    {% endunless %}
+
+    {% include banner.html %}
 
     {{ content }}
     

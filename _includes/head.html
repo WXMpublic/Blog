@@ -24,9 +24,9 @@
 	</style>
 	<!-- MathJax -->
 	{% if page.math %}
-	<script type="text/x-mathjax-config">
-          MathJax.Hub.Config({"extensions":["tex2jax.js"],"jax":["input/TeX","output/HTML-CSS"],"messageStyle":"none","tex2jax":{"processEnvironments":true,"processEscapes":true,"inlineMath":[["$","$"],["\\(","\\)"]],"displayMath":[["$$","$$"],["\\[","\\]"]]},"TeX":{"extensions":["AMSmath.js","AMSsymbols.js","noErrors.js","noUndefined.js"],"equationNumbers":{"autoNumber":"AMS"}},"HTML-CSS":{"availableFonts":["TeX"]}});
+	<script src="{{ 'styles/js/mathjax-config.js' | prepend: site.baseurl }}" defer></script>
+	<script type="text/javascript" id="MathJax-script" defer
+	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
 	</script>
-	<script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js"></script>
 	{% endif %}
 </head>

@@ -27,14 +27,37 @@ header: Posts By Tag
     <div class="col-md-9" role="main">
       <div class="panel docs-content">
         <div class="wrapper">
+			<header class="post-header">
+				<h1 class="post-title"> Tags </h1>
+			</header>
+
           <div class="home">
 
-          	{% for tag in site.tags %} 
-			  <h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+            {% for tag in site.tags %} 
+			  <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
 			  <ul>
 			    {% assign pages_list = tag[1] %}  
-			    {% include LessOrMore/pages_list %}
+			    {% include Lists/posts_list %}
 			  </ul>
+			{% endfor %}
+
+            {% for post in site.Quantum_Information %} 
+			  <ol class="breadcrumb">
+			    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
+			    <li style="float:right;"><span>{{ post.date | date: "%F" }}</span></li>
+			  </ol>
+			{% endfor %}
+
+            {% for page in site.pages %} 
+			  <ol class="breadcrumb">
+			    <li><a href="{{ page.url | prepend: site.baseurl }}">
+					{% if page.title %}
+						{{ page.title }}
+					{% else %}
+						text
+					{% endif %}</a></li>
+			    <li style="float:right;"><span>{{ page.date | date: "%F" }}</span></li>
+			  </ol>
 			{% endfor %}
 
           </div>

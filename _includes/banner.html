@@ -1,11 +1,11 @@
 
 <div class="banner">
   <div class="container">
-  	{% if page.categories != null %}
+  	{% if page.categories %}
     	<a href="{{ '/categories/' | prepend: site.baseurl }}#{{page.categories}}-ref">{{page.categories}}</a>	/
-      {% if page.tag!= null %}
+      {% if page.tag %}
         {% for taggie in page.tag %} 
-        <a href="{{ '/tag/' | prepend: site.baseurl }}#{{ taggie }}-ref">{{ taggie }}</a> ;
+          <a href="{{ '/tag/' | prepend: site.baseurl }}#{{ taggie }}-ref">{{ taggie }}</a> ;
         {% endfor %}
       {% endif %}
     {% else %}

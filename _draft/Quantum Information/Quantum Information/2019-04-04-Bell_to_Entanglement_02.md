@@ -1,7 +1,6 @@
 ---
 layout: post
 title: 从贝尔不等式到量子纠缠 (II)
-categories: [Quantum Information Theory]
 tag: [Quantum Information, Device Independent, Locality]
 math: true
 ---
@@ -9,8 +8,24 @@ math: true
 * content
 {:toc}
 
+$$
+\begin{equation} \label{eq:test}
+    \hilb, \sgn, \trans{A}, \one, \mathbb{0}, \outter{a}
+\end{equation}
+$$
 
-在前一章[从贝尔不等式到量子纠缠 (I)]({{ 'quantum%20information%20theory/Bell_to_Entanglement_01/' | prepend: site.baseurl}})中, 我介绍了一下设备无关测量以及该语境下的(演化的)局域性模型,
+{% for post in site.posts%}
+{{post.title}}
+
+{% endfor %}
+
+<div>
+{% for post in site.Quantum_Information %} 
+    <h2 id="{{ post.title }}-ref">{{ post.title }}</h2>
+{% endfor %}
+</div>
+
+\ref{eq:test} 在前一章[从贝尔不等式到量子纠缠 (I)]({{ 'quantum%20information%20theory/Bell_to_Entanglement_01/' | prepend: site.baseurl}})中, 我介绍了一下设备无关测量以及该语境下的(演化的)局域性模型,
 也就是"无信号" (non-signaling), 以及由两种不同内积导出的模型: "量子" (quantum) 与
 "局域/经典" (local/classical).
 
@@ -28,7 +43,7 @@ flag 表示输出, 但是似乎这不符合中国人的直觉). 当我们按下�
 前段时间火热的量子密钥分发协议就是基于设备无关测量的, 它的安全性与具体的通信系统无关.
 
 ![Measurement Device]({{ 'Q_Device.png' | prepend: site.figure_url}} "Measurement Device")
-<!-- ![Measurement Device](../../_asserts/figures/Q_Device.png "Measurement Device") -->
+<!-- ![Measurement Device](/Blog//asserts/figures/Q_Device.png "Measurement Device") -->
 
 当我们讨论局域性时, 我们需要的是两个类空测量事件, 也即是两个独立的测量事件, 分别用字母表
 $\Gamma_A$ 与 $\Gamma_B$ 表示, 而它们的结果分别用字母表 $X$ 与 $Y$ 表示.
@@ -51,11 +66,11 @@ $$\sum_a P(a,b\vert A,B) = \sum_a P(a,b\vert A^\prime,B)$$
 ## 量子
 
 正如我之前反复提到的, 量子态由希尔伯特空间上的密度算子(迹为 $1$ 的半正定算子)
-$\rho\in S(\mathcal{H})$ 所描述. 态可以有一个概率分布,即 $(\rho(\lambda),P(\lambda))$.
+$\rho\in S(\hilb)$ 所描述. 态可以有一个概率分布,即 $(\rho(\lambda),P(\lambda))$.
 
 测量由半正定算子 $M=\{E_a\}$ 表示, 其中 $\sum_a E_a=\mathbb{I}$ , 而给定态 $\rho(\lambda)$,
 测量结果为 $a$ 的概率为 $\tr[E_a\rho(\lambda)]$. 对于二分系统, 希尔伯特空间应该是一个张量积,
-也即是空间由两组独立的自由度组成 $\mathcal{H}^A\otimes\mathcal{H}^B$.
+也即是空间由两组独立的自由度组成 $\hilb^A\otimes\hilb^B$.
 测量分别作用在两个不同的子空间 $A_a\otimes\mathbb{I}_B$ 与 $\mathbb{I}_A\otimes B_b$ 上.
 
 这个情况下 $P(a\vert A,\lambda)= \tr[A_a\otimes\mathbb{I}_B \rho(\lambda)],
@@ -78,7 +93,7 @@ $$\sum_a P(a,b\vert A,B) =
 
 ## 局域 (经典)
 
-我们前面提到, 经典理论是实在的, 经典态由希尔伯特空间 $\mathcal{H}_A\otimes \mathcal{H}_B$
+我们前面提到, 经典理论是实在的, 经典态由希尔伯特空间 $\hilb_A\otimes \hilb_B$
 上的单位(实)向量 $\vec{v} \text{ or } \ket{v}$ 所表示, 它总是可以被写做
 $\ket{v_A\otimes v_B}$. 根据类似于我们之前对量子模型讨论时的限制, 测量 $A$
 与量子模型有着相同的形式. 这时
@@ -193,8 +208,7 @@ $$ \begin{aligned}
     =& \bra{v}(A_{+1}-A_{-1}) \otimes (B_{+1}-B_{-1})\ket{v}
 \end{aligned} $$
 
-定义 $\alpha=(A_{+1}-A_{-1})\otimes \mathbb{I}_B,
-\beta = \mathbb{I}\_A\otimes (B\_{+1}-B_{-1})$, 则上式可以看作
+定义 $\alpha=(A_{+1}-A_{-1})\otimes \id_B, \beta = \id_A\otimes (B_{+1}-B_{-1})$, 则上式可以看作
 $\ket{\alpha v}, \bra{\beta v}$ 的内积. (注意, 我们这里所有的算子都是厄米的)
 
 对于每一个 $\lambda$ 和 $c_k$,
@@ -215,7 +229,7 @@ $$ \begin{aligned}
 
 注意 , 根据定义, $A_{+1}+A_{-1} = \mathbb{I}_A$, 且它们都是半正定算子.
 
-我们可以把空间 $\mathcal{H}\_A$ 拆成3部分: $\Pi_+,\Pi_-,\Pi_\alpha$,
+我们可以把空间 $\hilb\_A$ 拆成3部分: $\Pi_+,\Pi_-,\Pi_\alpha$,
 其中 $\Pi_+A_{-1}=0; \Pi_{-}A_{+1}=0$;
 
 $\Pi_\alpha$ 为两个算子重叠的空间. $A_{+1} = \Pi_+ +M; A_- = \Pi_-+(\Pi_\alpha-M)$.
@@ -267,8 +281,8 @@ $$\abs{S} \leq 4$$
 
 我们可以画出相关几何
 
-![CHSH Geometry]({{'Geo_of_CHSH.png' | prepend: site.figure_url}} "Geometry of CHSH")
-<!-- ![CHSH Geometry](../../_asserts/figures/Geo_of_CHSH.png) -->
+<!-- ![CHSH Geometry]({{'Geo_of_CHSH.png' | prepend: site.figure_url}} "Geometry of CHSH") -->
+![CHSH Geometry](../../asserts/figures/Geo_of_CHSH.png)
 
 关于这个图, 有几点要注意
 

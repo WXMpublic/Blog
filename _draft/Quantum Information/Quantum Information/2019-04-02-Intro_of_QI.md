@@ -188,9 +188,9 @@ $\braket{E_i}{\rho} =\mathbb{P}(i\vert\rho)$.
 $\rho\geq 0\Rightarrow \Phi(\rho)\geq0$. 这样的超算子叫做正映射.
 但是正映射有一个很麻烦的问题. 如果我们将 $\rho$ 看做一个大系统上的子系统,
 也就是说它代表着大系统中的某些独立自由度.
-在数学上这意味着它是大空间 $\mathcal{H}^{AB} = \mathcal{H}^A\otimes\mathcal{H}^B$
-中的一个子空间 $\mathcal{H}^B$ 上的算子. 然而对于所有半正定算子
-$\tilde{\rho}\in\mathcal{H}^{AB}$, 即使 $\Phi$ 是正映射,
+在数学上这意味着它是大空间 $\hilb^{AB} = \hilb^A\otimes\hilb^B$
+中的一个子空间 $\hilb^B$ 上的算子. 然而对于所有半正定算子
+$\tilde{\rho}\in\hilb^{AB}$, 即使 $\Phi$ 是正映射,
 $\mathbb{I}_A\otimes\Phi(\tilde{\rho})$ 却不一定是半正定算子.
 也就是说, 即使是在子系统中看似可以将一个态映射到另一个态上的超算子也可能在大空间上把一个态映射到不合法的算子上.
 设 $A$ 系统的维度为 $n$, 则我们把拓展后还是正映射的算子叫做 $n$-正映射.

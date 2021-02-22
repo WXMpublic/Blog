@@ -6279,6 +6279,9 @@ hr {
     margin-top: -25px !important;
   }
 }
+.top_padding{
+  padding-top: 35px;
+}
 .banner {
   padding: 15px 20px;
   color: #777;
@@ -6329,7 +6332,7 @@ hr {
 }
 /* Page headers */
 .docs-header {
-  padding: 30px 15px 50px;
+  padding: 10px 15px;
   /* side padding builds on .container 15px, so 30px */
   font-size: 16px;
   text-align: center;
@@ -6528,7 +6531,7 @@ hr {
   border-color: #111f36;
 }
 .docs-nav .container .navbar-brand {
-  margin: 12px 0 0;
+  margin: 10px 0 5px;
   width: 80px;
   padding: 5px;
 }
