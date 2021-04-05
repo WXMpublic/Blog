@@ -65,10 +65,12 @@ $p\outter{\uparrow}{\uparrow}+(1-p)\outter{\downarrow}{\downarrow}$ 这样的态
 也就是这个态可以用测量统计来描述的, 拥有相同测量统计的两个态是不可区分的:
 
 \begin{equation}
-    \rho \equiv \braket{\vec{E}_1}{\vec{\rho}}\vec{E}_1+
-    \braket{\vec{E}_2}{\vec{\rho}}\vec{E}_2=
-    \qty[(1,0)\pmqty{p\\\\ 1-p}] \pmqty{1\\\\ 0}
-    +\qty[(0,1)\pmqty{p\\\\ 1-p}]\pmqty{0\\\\ 1}
+    \begin{aligned}
+        \rho & \equiv \braket{\vec{E}_1}{\vec{\rho}}\vec{E}_1+
+        \braket{\vec{E}_2}{\vec{\rho}}\vec{E}_2 \\\\\\
+        & =\qty[(1,0)\pmqty{p\\\\ 1-p}] \pmqty{1\\\\ 0}
+        +\qty[(0,1)\pmqty{p\\\\ 1-p}]\pmqty{0\\\\ 1}
+    \end{aligned}
 \end{equation}
 
 但是在量子理论中, 我们发现测量统计不足以描述所有的量子态, 我们的量子态应该由半正定算子描述:
