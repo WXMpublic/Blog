@@ -32,10 +32,11 @@ $$
 其中 $\vb{z}$ 是单位球 $S := \qty{\vb{z} : \norm{\vb{z}}_2 = 1}$ 上的元素.
 令 $\pi_1 = \min\qty{\nu(\vb{z}) : \vb{z}\in S}$, 则对于所有的非零向量我们有
 
-{: style = .highlight }
+``` info
 $$
 \pi_1 \norm{\vb{x}}_2 \leq \nu(\vb{x}) \leq \pi_2 \norm{\vb{x}}_2 \ .
 $$
+```
 
 显然, 零向量同样满足上式, 因而我们知道, 所有的范数 $\nu$ 都与 2-范数**等价**.
 换言之, 在有限维空间中, 所有范数等价.
@@ -48,8 +49,9 @@ $$
 对于不同算子空间 $\mathcal{L}(\spX,\mathcal{Z}), \mathcal{L}(\mathcal{Z},\spY)$ 以及 $\mathcal{L}(\spX,\spY)$ 上的范数
 $\mu,\nu,\rho$, 我们定义它们的一致性为满足
 
-{: style = .highlight }
+``` info
 $$\rho(AB) \leq \mu(A)\nu(B) \ .$$
+```
 
 这个一致性的定义最关键的一点在于, 如果一个 $\mathcal{L}(\spX,\spX)$ 上的范数是一致的, 则算子 $A$ 的谱半径
 

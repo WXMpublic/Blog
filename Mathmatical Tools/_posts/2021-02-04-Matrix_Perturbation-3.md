@@ -103,8 +103,10 @@ $$
 \end{equation}
 $$
 
-> 证明见 'Matrix Perturbation Theory' 的定理 V.2.11, 其利用了函数 $T(P) = PL_1 - L_2 P$ 可逆, 且存在不动点的性质.
-> 这也是上述定理中不等式的由来.
+``` quote
+证明见 'Matrix Perturbation Theory' 的定理 V.2.11, 其利用了函数 $T(P) = PL_1 - L_2 P$ 可逆, 且存在不动点的性质.
+这也是上述定理中不等式的由来.
+```
 
 如果 $\norm{\cdot}$ 是酉不变的.
 那么我们可以用子空间的性质来表示上述定理:
