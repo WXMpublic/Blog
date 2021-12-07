@@ -41,25 +41,6 @@ header: Posts By Tag
 			  </ul>
 			{% endfor %}
 
-            {% for post in site.Quantum_Information %} 
-			  <ol class="breadcrumb">
-			    <li><a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a></li>
-			    <li style="float:right;"><span>{{ post.date | date: "%F" }}</span></li>
-			  </ol>
-			{% endfor %}
-
-            {% for page in site.pages %} 
-			  <ol class="breadcrumb">
-			    <li><a href="{{ page.url | prepend: site.baseurl }}">
-					{% if page.title %}
-						{{ page.title }}
-					{% else %}
-						text
-					{% endif %}</a></li>
-			    <li style="float:right;"><span>{{ page.date | date: "%F" }}</span></li>
-			  </ol>
-			{% endfor %}
-
           </div>
         </div>
       </div>

@@ -6,7 +6,7 @@ author: WXM
 url: # serve locally
 baseurl: "/Blog/" # the subpath of your site, e.g. blog/
 description: >
-  A fresh start up of Git Pages
+  Notes on the roadmap of quantum information
 banner: Information is physical
 cover: "_assets/header/header_image.jpg"
 logo: "styles/images/favicon.ico"
@@ -21,7 +21,7 @@ collections:
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
 figure_url: "/Blog/asserts/figures/"
-resume_site: "https://WXMpublic.github.io/New-Page/about/"
+resume_site: "https://WXMpublic.github.io/Blog/about/"
 github: "https://github.com/WXMpublic/"
 
 # Build settings
