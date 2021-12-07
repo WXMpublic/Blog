@@ -28,11 +28,12 @@
     // 重新计算图片显示大小。
   	function repairTheImagesWhichCrossTheMaxWidth(){
   		var images = $(".docs-content img");
+      var panelWidth = $(".docs-content")[0].childNodes[1].clientWidth;
   		if(images != undefined && images.length > 0){
   			for(var i=0; i< images.length;i++){
   				var imgWidth = images[i].width;
-  				if( imgWidth >= 757 ){
-  					 images[i].width = 757;
+  				if( imgWidth >= panelWidth ){
+  					 images[i].width = panelWidth;
   				}
   			}
   		}
