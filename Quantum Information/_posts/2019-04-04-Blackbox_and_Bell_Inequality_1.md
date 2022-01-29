@@ -145,7 +145,7 @@ $$
 满足经典关联(由欧几里得内积描述)的理论叫做"局域理论" (local).
 不过我不是很喜欢 local 这个名字, 它与狭义相对论定义的 local 是不同的东西, 最好还是叫"局域实在理论" (local realistic).
 
-[黑盒理论与贝尔不等式 (II)]({{ 'quantum%20information/Blackbox_and_Bell_Inequality_1' | absolute_url}})中我会展示一下 $\text{local}\subsetneq\text{quantum}\subsetneq\text{non-signaling}$, 以及 Bell 不等式, 或者说 CHSH 不等式. 
+[黑盒理论与贝尔不等式 (II)]({{ 'quantum%20information/Blackbox_and_Bell_Inequality_2' | absolute_url}})中我会展示一下 $\text{local}\subsetneq\text{quantum}\subsetneq\text{non-signaling}$, 以及 Bell 不等式, 或者说 CHSH 不等式. 
 
 ![MDI Venn Graph]({{ 'Device_Indi_Geo.png' | prepend: site.figure_url}})
 <!-- ![MDI Graph](../../_asserts/figures/Device_Indi_Geo.png) -->

@@ -6,7 +6,7 @@ author: WXM
 url: # serve locally
 baseurl: "/Blog/" # the subpath of your site, e.g. blog/
 description: >
-  Notes on the roadmap of quantum information
+  Notes on the basics of quantum information
 banner: Information is physical
 cover: "_assets/header/header_image.jpg"
 logo: "styles/images/favicon.ico"
