@@ -1,7 +1,6 @@
 ---
 layout: default
-title: Tags
-header: Posts By Tag
+header: 标签
 ---
 
 <div class="container docs-container">
@@ -9,7 +8,7 @@ header: Posts By Tag
     <div class="col-md-3">
       <div class="sidebar hidden-print" role="complementary">
         <div id="navigation">
-        	<h1>Table of Contents</h1>
+        	<h1>目录</h1>
       		<ul class="nav sidenav">
 			  	{% if site.tags.first[0] == null %}
 				  	{% for tag in site.tags %} 
@@ -17,7 +16,11 @@ header: Posts By Tag
 				  	{% endfor %}
 				{% else %}
 				  	{% for tag in site.tags %} 
-				  	<li><a href="{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }} <span style="color: #999999;" >({{ tag[1].size }})</span></a></li>
+					  {% if tag[0].first %}
+						<li><a href="{{ site.JB.tags_path }}#{{ tag[0].first }}-ref">{{ tag[0].first }} <span style="color: #999999;" >({{ tag[1].size }})</span></a></li>
+					  {% else %}
+						<li><a href="{{ site.JB.tags_path }}#{{ tag[0] }}-ref">{{ tag[0] }} <span style="color: #999999;" >({{ tag[1].size }})</span></a></li>
+					  {% endif %}
 				  	{% endfor %}
 				{% endif %}
           	</ul>
@@ -27,18 +30,19 @@ header: Posts By Tag
     <div class="col-md-9" role="main">
       <div class="panel docs-content">
         <div class="wrapper">
-			<header class="post-header">
-				<h1 class="post-title"> Tags </h1>
-			</header>
 
           <div class="home">
 
-            {% for tag in site.tags %} 
-			  <h3 id="{{ tag[0] }}-ref">{{ tag[0] }}</h3>
-			  <ul>
-			    {% assign pages_list = tag[1] %}  
-			    {% include Lists/posts_list %}
-			  </ul>
+			{% for tag in site.tags %} 
+				{% if tag[0].first %}
+					<h2 id="{{ tag[0].first }}-ref">{{ tag[0].first }}</h2>
+				{% else %}
+					<h2 id="{{ tag[0] }}-ref">{{ tag[0] }}</h2>
+				{% endif %}
+				<ul>
+					{% assign pages_list = tag[1] %}
+					{% include Lists/posts_list %}
+				</ul>
 			{% endfor %}
 
           </div>

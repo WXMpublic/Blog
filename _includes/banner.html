@@ -5,7 +5,11 @@
     	<a href="{{ '/categories/' | prepend: site.baseurl }}#{{page.categories}}-ref">{{page.categories}}</a>	/
       {% if page.tag %}
         {% for taggie in page.tag %} 
-          <a href="{{ '/tag/' | prepend: site.baseurl }}#{{ taggie }}-ref">{{ taggie }}</a> ;
+          {% if forloop.last %}
+            <a href="{{ '/tag/' | prepend: site.baseurl }}#{{ taggie }}-ref">{{ taggie }}</a>
+          {% else %}
+            <a href="{{ '/tag/' | prepend: site.baseurl }}#{{ taggie }}-ref">{{ taggie }}</a>,
+          {% endif %}
         {% endfor %}
       {% endif %}
     {% else %}

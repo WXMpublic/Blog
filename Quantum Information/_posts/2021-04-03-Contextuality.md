@@ -1,6 +1,8 @@
 ---
 title: 量子互文
 layout: note
+
+tag: 量子信息
 math: true
 ---
 

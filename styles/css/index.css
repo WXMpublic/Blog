@@ -407,7 +407,7 @@ h6,
 }
 ul,
 ol {
-  margin-top: 0;
+  /* margin-top: 0; */
   margin-bottom: 10px;
 }
 ul ul,
@@ -5422,7 +5422,7 @@ button.close {
 body {
   position: relative;
   /* For scrollyspy */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   /* Account for fixed navbar */
 }
 /* Keep code small in tables on account of limited space */
@@ -6280,7 +6280,7 @@ hr {
   }
 }
 .top_padding{
-  padding-top: 35px;
+  padding-top: 85px;
 }
 .banner {
   padding: 15px 20px;

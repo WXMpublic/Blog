@@ -1,6 +1,8 @@
 ---
 title: 资源理论 - 基础概念
 layout: note
+
+tag: 量子信息
 math: true
 ---
 

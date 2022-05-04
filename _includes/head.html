@@ -24,11 +24,10 @@
 			margin-bottom: 10px;
 		}
 	</style>
-	<!-- MathJax -->
 	{% if page.math %}
-	<script src="{{ 'styles/js/mathjax-config.js' | prepend: site.baseurl }}" defer></script>
-	<script type="text/javascript" id="MathJax-script" defer
-	src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
-	</script>
+		{% include Optional/mathjax.html %}
+	{% endif %}
+	{% if page.mermaid %}
+		{% include Optional/mermaid.html %}
 	{% endif %}
 </head>

@@ -1,6 +1,8 @@
 ---
 title: 黑盒理论与贝尔不等式 (II)
 layout: note
+
+tag: 量子信息
 math: true
 ---
 
@@ -270,8 +272,7 @@ $$\abs{S} \leq 4$$
 
 我们可以画出相关几何
 
-<!-- ![CHSH Geometry]({{'Geo_of_CHSH.png' | prepend: site.figure_url}} "Geometry of CHSH") -->
-![CHSH Geometry](../../asserts/figures/Geo_of_CHSH.png)
+![CHSH Geometry]({{'Geo_of_CHSH.png' | prepend: site.figure_url}} "Geometry of CHSH")
 
 关于这个图, 有几点要注意
 

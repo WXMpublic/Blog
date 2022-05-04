@@ -43,7 +43,7 @@ flag 表示输出, 但是似乎这不符合中国人的直觉). 当我们按下�
 前段时间火热的量子密钥分发协议就是基于设备无关测量的, 它的安全性与具体的通信系统无关.
 
 ![Measurement Device]({{ 'Q_Device.png' | prepend: site.figure_url}} "Measurement Device")
-<!-- ![Measurement Device](/Blog//asserts/figures/Q_Device.png "Measurement Device") -->
+<!-- ![Measurement Device](/Blog//assets/figures/Q_Device.png "Measurement Device") -->
 
 当我们讨论局域性时, 我们需要的是两个类空测量事件, 也即是两个独立的测量事件, 分别用字母表
 $\Gamma_A$ 与 $\Gamma_B$ 表示, 而它们的结果分别用字母表 $X$ 与 $Y$ 表示.

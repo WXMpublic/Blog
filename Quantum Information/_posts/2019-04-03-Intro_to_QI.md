@@ -1,6 +1,8 @@
 ---
 title: 量子信息基础 - 态, 测量与信道
 layout: note
+
+tag: 量子信息
 math: true
 ---
 

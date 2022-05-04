@@ -1,6 +1,8 @@
 ---
 title: 矩阵微扰 - 算子的矩阵表示
 layout: note
+
+tag: 矩阵分析
 math: true
 ---
 

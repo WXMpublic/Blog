@@ -1,6 +1,8 @@
 ---
 title: 矩阵微扰 - 扰动的量化
 layout: note
+
+tag: 矩阵分析
 math: true
 ---
 

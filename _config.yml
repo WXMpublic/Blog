@@ -12,6 +12,9 @@ cover: "_assets/header/header_image.jpg"
 logo: "styles/images/favicon.ico"
 about: "about/"
 
+sass:
+  sass_dir: _sass
+
 permalink: :categories/:title/
 # permalink: /:year/:month/:day/:title/
 # paginate: 10
@@ -20,7 +23,7 @@ collections:
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
-figure_url: "/Blog/asserts/figures/"
+figure_url: "/Blog/assets/figures/"
 resume_site: "https://WXMpublic.github.io/Blog/about/"
 github: "https://github.com/WXMpublic/"
 

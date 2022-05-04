@@ -1,6 +1,8 @@
 ---
 title: 黑盒理论与贝尔不等式 (I)
 layout: note
+
+tag: 量子信息
 math: true
 ---
 
@@ -148,4 +150,3 @@ $$
 [黑盒理论与贝尔不等式 (II)]({{ 'quantum%20information/Blackbox_and_Bell_Inequality_2' | absolute_url}})中我会展示一下 $\text{local}\subsetneq\text{quantum}\subsetneq\text{non-signaling}$, 以及 Bell 不等式, 或者说 CHSH 不等式. 
 
 ![MDI Venn Graph]({{ 'Device_Indi_Geo.png' | prepend: site.figure_url}})
-<!-- ![MDI Graph](../../_asserts/figures/Device_Indi_Geo.png) -->
