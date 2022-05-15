@@ -1,24 +1,21 @@
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>{{ page.title | append: ' - ' |append: site.name }}</title>
 
-	<link rel="shortcut icon" href="{{ '/styles/images/favicon.ico' | prepend: site.baseurl }}">
-	<link rel="icon" href="{{ '/styles/images/favicon.ico' | prepend: site.baseurl }}">
+	<link rel="shortcut icon" href="{{ site.logo | prepend: site.baseurl }}">
+	<link rel="icon" href="{{ 'assets/logo/logo.png' | prepend: site.baseurl }}">
 
-	<link rel="stylesheet" href="{{ '/styles/css/index.css' | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ '/styles/css/fontawesome/css/font-awesome.min.css' | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ '/styles/css/syntax.css' | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="{{ '/styles/css/admonition.css' | prepend: site.baseurl }}">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="{{ 'styles/css/index.css' | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ 'styles/css/syntax.css' | prepend: site.baseurl }}">
+	<link rel="stylesheet" href="{{ 'styles/css/admonitions.css' | prepend: site.baseurl }}">
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl }}">
 	<link rel="alternate" type="application/rss+xml" title="{{ site.name }}"
-		href="{{ '/feed.xml' | prepend: site.baseurl }}">
+		href="{{ 'feed.xml' | prepend: site.baseurl }}">
 
 	<meta name="keywords" content="{{ page.title | append: ', ' | append: site.name}}">
 
-	<script src="{{ '/styles/js/jquery.min.js' | prepend: site.baseurl }}"></script>
+	<script src="{{ 'styles/js/jquery.min.js' | prepend: site.baseurl }}"></script>
 	<style type="text/css">
 		.docs-content {
 			margin-bottom: 10px;

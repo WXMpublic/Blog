@@ -1,4 +1,19 @@
 /*! normalize.css v2.1.3 | MIT License | git.io/normalize */
+
+@font-face {
+  font-family: 'Righteous';
+  src: url('../fonts/Righteous-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/Material_Icons.woff2') format('woff2');
+}
+
 article,
 aside,
 details,
