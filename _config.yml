@@ -2,15 +2,16 @@
 name: Q-Canon
 subtitile: Notes on Quantum Information Science
 author: WXM
-# url: "https://WXMpublic.github.io/" # the base hostname & protocol for your site
-url: # serve locally
-baseurl: "/Blog/" # the subpath of your site, e.g. blog/
+# url: "https://blog.q-canon.top/" # the base hostname & protocol for your site
+# baseurl: "" # the subpath of your site, e.g. blog/
+baseurl: "/Blog"
 description: >
   Notes on the basics of quantum information
 banner: Information is physical
 cover: "_assets/header/header_image.jpg"
-logo: "assets/logo/favicon.ico"
-figure_url: "/Blog/assets/images/"
+short_icon: "/assets/logo/favicon.ico"
+icon: "/assets/logo/logo.png"
+figure_url: "/assets/images/"
 about: "about/"
 
 # sass:
@@ -24,7 +25,7 @@ collections:
 
 exclude: ['README.md', 'Gemfile.lock', 'Gemfile', 'Rakefile']
 
-resume_site: "https://WXMpublic.github.io/Blog/about/"
+# resume_site: "https://WXMpublic.github.io/Blog/about/"
 github: "https://github.com/WXMpublic/"
 
 # Build settings
