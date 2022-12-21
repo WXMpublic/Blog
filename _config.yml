@@ -2,17 +2,17 @@
 name: Q-Canon
 subtitile: Notes on Quantum Information Science
 author: WXM
-# url: "https://blog.q-canon.top/" # the base hostname & protocol for your site
+url: "https://blog.q-canon.top/" # the base hostname & protocol for your site
 # baseurl: "" # the subpath of your site, e.g. blog/
-baseurl: "/Blog"
-description: >
+# baseurl: "/Blog"
+description: >-
   Notes on the basics of quantum information
 banner: Information is physical
 cover: "_assets/header/header_image.jpg"
 short_icon: "/assets/logo/favicon.ico"
 icon: "/assets/logo/logo.png"
 figure_url: "/assets/images/"
-about: "about/"
+about: "/about/"
 
 # sass:
 #   sass_dir: _sass
